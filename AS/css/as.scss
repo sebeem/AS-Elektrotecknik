@@ -225,7 +225,42 @@ content{
 
 //Service
 
-
+.service{
+    height: 857px;
+    width: 100%;
+    padding: 80px;
+    background-color: $white;
+    h1{
+        @include h1-style;
+        color: $darkBlue
+    }
+    p{
+        @include p-style;
+        color: $lightGray;
+    }
+    .above-imgs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #arrow-left{
+        color: $darkBlue;
+        border: 1px solid $blueColor;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 16px;
+    }
+    #arrow-right{
+        color: $darkBlue;
+        border: 1px solid $blueColor;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 16px;
+    }
+    .service-foot{
+        padding: 40px 0;
+    }
+}
 
 //Referenzen
 
@@ -267,42 +302,42 @@ content{
     #check-img1{
         position: absolute;
         left: 90px;
-        top: 3012px;
+        top: 3867px;
     }
     #check-img2{
         position: absolute;
         left: 395px;
-        top: 3012px;
+        top: 3867px;
     }
     #check-img3{
         position: absolute;
         left: 700px;
-        top: 3012px;
+        top: 3867px;
     }
     #check-img4{
         position: absolute;
         left: 1000px;
-        top: 3012px;
+        top: 3867px;
     }
     #check-img5{
         position: absolute;
         left: 90px;
-        top: 3156px;
+        top: 4011px;
     }
     #check-img6{
         position: absolute;
         left: 395px;
-        top: 3156px;
+        top: 4011px;
     }
     #check-img7{
         position: absolute;
         left: 700px;
-        top: 3156px;
+        top: 4011px;
     }
     #check-img8{
         position: absolute;
         left: 1000px;
-        top: 3156px;
+        top: 4011px;
     }
     .border3{
         position: absolute;
@@ -369,7 +404,7 @@ content{
         border: 1px solid $blueColor;
         border-radius: 24px;
         position: absolute;
-        top: 3480px;
+        top: 4335px;
         left: 860px;
     }
 }
@@ -403,7 +438,6 @@ footer{
         text-decoration: none;
         cursor: pointer;
         text-align: center;
-        border: 1px solid transparent;
         border-radius: 5px;
         transition: 0.2s;
         &:hover{
@@ -417,14 +451,22 @@ footer{
         display: flex;
         flex-direction: row;
         margin-top: 60px;
+        img{
+            width: 40px;
+        }
     }
     .footer-contact{
         display: flex;
         flex-direction: row;
         padding-right: 40px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.2;
+        }
     }
     .footer-logo{
-        padding-right: 10px
+        padding-right: 10px;
     }
     img{
         @include img-color;

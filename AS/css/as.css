@@ -334,6 +334,61 @@ content {
   margin-right: 20px;
 }
 
+.service {
+  height: 857px;
+  width: 100%;
+  padding: 80px;
+  background-color: #FFFFFF;
+}
+
+.service h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 55px;
+  color: #232A36;
+}
+
+.service p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #717171;
+}
+
+.service .above-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service #arrow-left {
+  color: #232A36;
+  border: 1px solid #0051F9;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.service #arrow-right {
+  color: #232A36;
+  border: 1px solid #0051F9;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.service .service-foot {
+  padding: 40px 0;
+}
+
 .referenzen {
   background-image: url(../images/Vector.png);
   padding: 80px;
@@ -396,49 +451,49 @@ content {
 .referenzen #check-img1 {
   position: absolute;
   left: 90px;
-  top: 3012px;
+  top: 3867px;
 }
 
 .referenzen #check-img2 {
   position: absolute;
   left: 395px;
-  top: 3012px;
+  top: 3867px;
 }
 
 .referenzen #check-img3 {
   position: absolute;
   left: 700px;
-  top: 3012px;
+  top: 3867px;
 }
 
 .referenzen #check-img4 {
   position: absolute;
   left: 1000px;
-  top: 3012px;
+  top: 3867px;
 }
 
 .referenzen #check-img5 {
   position: absolute;
   left: 90px;
-  top: 3156px;
+  top: 4011px;
 }
 
 .referenzen #check-img6 {
   position: absolute;
   left: 395px;
-  top: 3156px;
+  top: 4011px;
 }
 
 .referenzen #check-img7 {
   position: absolute;
   left: 700px;
-  top: 3156px;
+  top: 4011px;
 }
 
 .referenzen #check-img8 {
   position: absolute;
   left: 1000px;
-  top: 3156px;
+  top: 4011px;
 }
 
 .referenzen .border3 {
@@ -538,7 +593,7 @@ content {
   border: 1px solid #0051F9;
   border-radius: 24px;
   position: absolute;
-  top: 3480px;
+  top: 4335px;
   left: 860px;
 }
 
@@ -585,7 +640,6 @@ footer a {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  border: 1px solid transparent;
   border-radius: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -610,6 +664,10 @@ footer .footer-contacts {
   margin-top: 60px;
 }
 
+footer .footer-contacts img {
+  width: 40px;
+}
+
 footer .footer-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,6 +677,13 @@ footer .footer-contact {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-right: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+footer .footer-contact:hover {
+  opacity: 0.2;
 }
 
 footer .footer-logo {
