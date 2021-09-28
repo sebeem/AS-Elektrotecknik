@@ -420,6 +420,7 @@ content {
   border: 1px solid #D2D2D2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .service .img-background:hover {
@@ -434,8 +435,8 @@ content {
   line-height: 30px;
   color: #232A36;
   font-weight: bold;
-  padding-top: 14px;
-  padding-left: 22px;
+  padding-top: 16px;
+  padding-left: 28px;
 }
 
 .service .img-background img {
@@ -774,5 +775,19 @@ footer .border5 {
   height: 1px;
   border-bottom: 1px solid #FFFFFF;
   padding-top: 14px;
+}
+
+.swiper {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=as.css.map */

@@ -275,6 +275,7 @@ content{
         background-color: $white;
         border: 1px solid $strokeGray;
         transition: 0.2s;
+        cursor: pointer;
         &:hover{
             border: 2px solid $blueColor;
             box-sizing: border-box;
@@ -283,8 +284,8 @@ content{
             @include p-style;
             color: $darkBlue;
             font-weight: bold;
-            padding-top: 14px;
-            padding-left: 22px;
+            padding-top: 16px;
+            padding-left: 28px;
         }
         img{
             width: 382px;
@@ -518,4 +519,14 @@ footer{
         border-bottom: 1px solid $white;
         padding-top: 14px;
     }
+}
+
+
+
+.swiper {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
