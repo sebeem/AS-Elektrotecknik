@@ -367,22 +367,82 @@ content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
 }
 
-.service #arrow-left {
-  color: #232A36;
+.service .arrow-background-left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border: 1px solid #0051F9;
-  border-radius: 50%;
   cursor: pointer;
-  padding: 16px;
+  padding: 16px 18px;
+  border-radius: 50%;
+  margin-right: 14px;
 }
 
-.service #arrow-right {
-  color: #232A36;
+.service .arrow-background-right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border: 1px solid #0051F9;
-  border-radius: 50%;
   cursor: pointer;
-  padding: 16px;
+  padding: 16px 18px;
+  border-radius: 50%;
+}
+
+.service .img-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 16px;
+}
+
+.service .img-background {
+  width: 384px;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.service .img-background:hover {
+  border: 2px solid #0051F9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .img-background p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #232A36;
+  font-weight: bold;
+  padding-top: 14px;
+  padding-left: 22px;
+}
+
+.service .img-background img {
+  width: 382px;
+  border-radius: 12px 12px 0px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .service .service-foot {

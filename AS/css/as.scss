@@ -242,20 +242,55 @@ content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
     }
-    #arrow-left{
-        color: $darkBlue;
+    .arrow-background-left{
+        display: inline-flex;
+        flex-direction: row;
         border: 1px solid $blueColor;
-        border-radius: 50%;
         cursor: pointer;
-        padding: 16px;
+        padding: 16px 18px;
+        border-radius: 50%;
+        margin-right: 14px;
     }
-    #arrow-right{
-        color: $darkBlue;
+    .arrow-background-right{
+        display: inline-flex;
+        flex-direction: row;
         border: 1px solid $blueColor;
-        border-radius: 50%;
         cursor: pointer;
-        padding: 16px;
+        padding: 16px 18px;
+        border-radius: 50%;
+    }
+    .img-slide{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 16px;
+    }
+    .img-background{
+        width: 384px;
+        height: 320px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        background-color: $white;
+        border: 1px solid $strokeGray;
+        transition: 0.2s;
+        &:hover{
+            border: 2px solid $blueColor;
+            box-sizing: border-box;
+        }
+        p{
+            @include p-style;
+            color: $darkBlue;
+            font-weight: bold;
+            padding-top: 14px;
+            padding-left: 22px;
+        }
+        img{
+            width: 382px;
+            border-radius: 12px 12px 0px 0px;
+            box-sizing: border-box;
+        }
     }
     .service-foot{
         padding: 40px 0;
