@@ -459,9 +459,18 @@ content {
 }
 
 .service .swiper img {
-  width: 374px;
+  width: 384px;
   height: 208px;
   border-radius: 12px 12px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .service .swiper .swiper-slide {
@@ -470,8 +479,6 @@ content {
   border: 1px solid #717171;
   border-radius: 12px;
   text-align: start;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .service .swiper .swiper-slide:hover {

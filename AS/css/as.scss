@@ -296,9 +296,12 @@ content{
     .swiper{
         margin-left: 40px;
         img{
-            width: 374px;
+            width: 384px;
             height: 208px;
             border-radius: 12px 12px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .swiper-wrapper{
         }
@@ -308,7 +311,6 @@ content{
             border: 1px solid $lightGray;
             border-radius: 12px;
             text-align: start;
-            transition: 0.2s;
             &:hover{
                 border: 2px solid $blueColor;
             }
