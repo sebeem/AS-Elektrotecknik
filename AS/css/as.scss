@@ -264,7 +264,15 @@ content{
             border: 1px solid $blueColor;
             border-radius: 50%;
             cursor: pointer;
+            transition: 0.2s;
             margin-right: 14px;
+            &:hover{
+                background-color: $lightBlue;
+                border: 2px solid $darkBlue2;
+            }
+            &:active{
+                background-color: $blueColor;
+            }
         }
         .arrow-right{
             display: flex;
@@ -275,12 +283,20 @@ content{
             border: 1px solid $blueColor;
             border-radius: 50%;
             cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                background-color: $lightBlue;
+                border: 2px solid $darkBlue2;
+            }
+            &:active{
+                background-color: $blueColor;
+            }
         }
     }
     .swiper{
         margin-left: 40px;
         img{
-            width: 384px;
+            width: 374px;
             height: 208px;
             border-radius: 12px 12px 0px 0px;
         }
@@ -292,13 +308,14 @@ content{
             border: 1px solid $lightGray;
             border-radius: 12px;
             text-align: start;
-            transition: 0.4s;
+            transition: 0.2s;
             &:hover{
                 border: 2px solid $blueColor;
             }
             p{
                 @include p-style;
                 color: $darkBlue;
+                font-weight: bold;
                 padding-left: 32px;
                 padding-top: 22px;
             }
@@ -495,6 +512,9 @@ footer{
         cursor: pointer;
         &:hover{
             opacity: 0.2;
+        }
+        &:active{
+            color: $blueColor;
         }
     }
     .footer-logo{

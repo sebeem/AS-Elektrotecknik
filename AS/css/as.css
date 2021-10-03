@@ -412,7 +412,18 @@ content {
   border: 1px solid #0051F9;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-right: 14px;
+}
+
+.service .buttons .arrow-left:hover {
+  background-color: #EBF1FF;
+  border: 2px solid #1E2533;
+}
+
+.service .buttons .arrow-left:active {
+  background-color: #0051F9;
 }
 
 .service .buttons .arrow-right {
@@ -430,6 +441,17 @@ content {
   border: 1px solid #0051F9;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.service .buttons .arrow-right:hover {
+  background-color: #EBF1FF;
+  border: 2px solid #1E2533;
+}
+
+.service .buttons .arrow-right:active {
+  background-color: #0051F9;
 }
 
 .service .swiper {
@@ -437,7 +459,7 @@ content {
 }
 
 .service .swiper img {
-  width: 384px;
+  width: 374px;
   height: 208px;
   border-radius: 12px 12px 0px 0px;
 }
@@ -448,8 +470,8 @@ content {
   border: 1px solid #717171;
   border-radius: 12px;
   text-align: start;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .service .swiper .swiper-slide:hover {
@@ -461,6 +483,7 @@ content {
   font-size: 18px;
   line-height: 30px;
   color: #232A36;
+  font-weight: bold;
   padding-left: 32px;
   padding-top: 22px;
 }
@@ -741,6 +764,10 @@ footer .footer-contact {
 
 footer .footer-contact:hover {
   opacity: 0.2;
+}
+
+footer .footer-contact:active {
+  color: #0051F9;
 }
 
 footer .footer-logo {
