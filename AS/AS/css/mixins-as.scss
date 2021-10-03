@@ -1,0 +1,29 @@
+// Mixins AS
+@import "variables-as";
+
+@mixin h1-style {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+@mixin h3-style {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin h3-style {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin p-style{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@mixin img-color {
+    filter: brightness(0) invert(1);
+}
