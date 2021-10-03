@@ -108,7 +108,7 @@ content{
 
 //PLUMBER PAGE
 .plumber-page{
-    background-color: #E5E5E5;
+    background-color: $white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -216,7 +216,11 @@ content{
     }
     .background-logo{
         cursor: pointer;
-        padding: 16px 18px;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 50%;
         border: 1px solid $blueColor;
         margin-right: 20px;
@@ -226,75 +230,87 @@ content{
 //Service
 
 .service{
-    height: 857px;
-    width: 100%;
-    padding: 80px;
-    background-color: $white;
-    h1{
-        @include h1-style;
-        color: $darkBlue
-    }
-    p{
-        @include p-style;
-        color: $lightGray;
-    }
-    .above-imgs{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px 0;
-    }
-    .arrow-background-left{
-        display: inline-flex;
-        flex-direction: row;
-        border: 1px solid $blueColor;
-        cursor: pointer;
-        padding: 16px 18px;
-        border-radius: 50%;
-        margin-right: 14px;
-    }
-    .arrow-background-right{
-        display: inline-flex;
-        flex-direction: row;
-        border: 1px solid $blueColor;
-        cursor: pointer;
-        padding: 16px 18px;
-        border-radius: 50%;
-    }
-    .img-slide{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-gap: 16px;
-    }
-    .img-background{
-        width: 384px;
-        height: 320px;
-        box-sizing: border-box;
-        border-radius: 12px;
-        background-color: $white;
-        border: 1px solid $strokeGray;
-        transition: 0.2s;
-        cursor: pointer;
-        &:hover{
-            border: 2px solid $blueColor;
-            box-sizing: border-box;
+    .service-title{
+        margin: 80px 80px 20px 80px;
+        h1{
+            @include h1-style;
+            color: $darkBlue;
         }
         p{
             @include p-style;
-            color: $darkBlue;
-            font-weight: bold;
-            padding-top: 16px;
-            padding-left: 28px;
+            color: $lightGray;
         }
+    }
+    .swiper-head{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 80px;
+        p{
+            @include p-style;
+            color: $lightGray;
+        }
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        .arrow-left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid $blueColor;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: 14px;
+        }
+        .arrow-right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid $blueColor;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    .swiper{
+        margin-left: 40px;
         img{
-            width: 382px;
+            width: 384px;
+            height: 208px;
             border-radius: 12px 12px 0px 0px;
-            box-sizing: border-box;
+        }
+        .swiper-wrapper{
+        }
+        .swiper-slide{
+            width: 384px;
+            height: 320px;
+            border: 1px solid $lightGray;
+            border-radius: 12px;
+            text-align: start;
+            transition: 0.4s;
+            &:hover{
+                border: 2px solid $blueColor;
+            }
+            p{
+                @include p-style;
+                color: $darkBlue;
+                padding-left: 32px;
+                padding-top: 22px;
+            }
         }
     }
     .service-foot{
-        padding: 40px 0;
+        p{
+            @include p-style;
+            color: $lightGray;
+            font-size: 16px;
+            margin: 50px 80px 80px 80px;
+        }
     }
 }
 
@@ -318,62 +334,42 @@ content{
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 24px;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
     .ref-img{
         background-color: $white;
         height: 120px;
         width: 280px;
+        box-sizing: border-box;
         border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .ref-txt{
+            position: relative;
+            bottom: 20px;
+            #txt-1{
+                position: relative;
+                bottom: 26px;
+            }
+            #txt-2{
+                position: relative;
+                bottom: 12px;
+            }
+            #txt-3{
+                position: relative;
+                bottom: 16px;
+            }
+        }
+        img{
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 12px;
+            margin-left: 12px;
+        }
         p{
             color: $darkBlue;
             font-weight: bold;
-            text-align: center;
         }
-    }
-    #check-img1{
-        position: absolute;
-        left: 90px;
-        top: 3867px;
-    }
-    #check-img2{
-        position: absolute;
-        left: 395px;
-        top: 3867px;
-    }
-    #check-img3{
-        position: absolute;
-        left: 700px;
-        top: 3867px;
-    }
-    #check-img4{
-        position: absolute;
-        left: 1000px;
-        top: 3867px;
-    }
-    #check-img5{
-        position: absolute;
-        left: 90px;
-        top: 4011px;
-    }
-    #check-img6{
-        position: absolute;
-        left: 395px;
-        top: 4011px;
-    }
-    #check-img7{
-        position: absolute;
-        left: 700px;
-        top: 4011px;
-    }
-    #check-img8{
-        position: absolute;
-        left: 1000px;
-        top: 4011px;
     }
     .border3{
         position: absolute;
@@ -440,7 +436,7 @@ content{
         border: 1px solid $blueColor;
         border-radius: 24px;
         position: absolute;
-        top: 4335px;
+        top: 4324px;
         left: 860px;
     }
 }
@@ -519,14 +515,4 @@ footer{
         border-bottom: 1px solid $white;
         padding-top: 14px;
     }
-}
-
-
-
-.swiper {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
